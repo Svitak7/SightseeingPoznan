@@ -25,11 +25,11 @@ public class MuseumsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_museums, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_places, container, false);
 
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Brama Poznania","Gdańska 2", R.drawable.bramapoznania));
-        places.add(new Place("Muzeum Powstania Wlkp.","Stary Rynek 3",R.drawable.muzeumpowstaniawielkopolskiego));
+        places.add(new Place(getString(R.string.place_museums_brama_poznania),getString(R.string.address_museums_brama_poznania), R.drawable.bramapoznania));
+        places.add(new Place(getString(R.string.place_museums_muzeum_powstania),getString(R.string.address_museums_muzeum_powstania),R.drawable.muzeumpowstaniawielkopolskiego));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(),places);
         ListView listView = (ListView) rootView.findViewById(R.id.list);

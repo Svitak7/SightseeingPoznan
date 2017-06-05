@@ -24,11 +24,11 @@ public class PubsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_pubs,container,false);
+        View rootView = inflater.inflate(R.layout.fragment_places,container,false);
 
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Twoja Stara","Małe Garbary 7A",R.drawable.twojastara));
-        places.add(new Place("Dragon","Zamkowa 3",R.drawable.dragon));
+        places.add(new Place(getString(R.string.place_pubs_twoja_stara),getString(R.string.address_pubs_twoja_stara),R.drawable.twojastara));
+        places.add(new Place(getString(R.string.place_pubs_dragon),getString(R.string.address_pubs_dragon),R.drawable.dragon));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(),places);
         ListView listView = (ListView) rootView.findViewById(R.id.list);

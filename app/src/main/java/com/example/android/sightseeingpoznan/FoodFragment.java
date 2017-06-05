@@ -24,10 +24,10 @@ public class FoodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.place_list,container,false);
+        View rootView = inflater.inflate(R.layout.fragment_places,container,false);
         final ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Yetztu","ul. Krysiewicza 6",R.drawable.yetztu));
-        places.add(new Place("Made in Chna","ul. 27 Grudnia",R.drawable.madeinchina));
+        places.add(new Place(getString(R.string.place_food_yetztu),getString(R.string.address_food_yetztu),R.drawable.yetztu));
+        places.add(new Place(getString(R.string.place_food_made_in_china),getString(R.string.address_food_made_in_china),R.drawable.madeinchina));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(),places);
         ListView listView = (ListView) rootView.findViewById(R.id.list);

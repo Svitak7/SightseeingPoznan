@@ -3,4 +3,28 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="place_museums_brama_poznania">Brama Poznania</string>
+    <string name="address_museums_brama_poznania">Gdańska 2</string>
+    <string name="place_museums_muzeum_powstania">Muzeum Powstania Wlkp.</string>
+    <string name="address_museums_muzeum_powstania">Stary Rynek 3</string>
+
+    <string name="place_pubs_twoja_stara">Twoja Stara</string>
+    <string name="address_pubs_twoja_stara">Małe Garbary 7A</string>
+    <string name="place_pubs_dragon">Dragon</string>
+    <string name="address_pubs_dragon">Zamkowa 3</string>
+
+    <string name="place_sights_ratusz">Ratusz</string>
+    <string name="address_sights_ratusz">Stary Rynek 1</string>
+    <string name="place_sights_centrum_kultury">Centrum Kultury Zamek</string>
+    <string name="address_sights_centrum_kultury">Św.Marcin 80/82"</string>
+
+    <string name="place_food_yetztu">Yetztu</string>
+    <string name="address_food_yetztu">ul. Krysiewicza 6</string>
+    <string name="place_food_made_in_china">Made in Chna</string>
+    <string name="address_food_made_in_china">ul. 27 Grudnia</string>
+
+
+
+
 </resources>
